@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -374,7 +375,6 @@ h1, h2, h3, h4 {
     color: #1e293b;
     font-size: 15px;
     font-family: inherit;
-    box-sizing: border-box;
 }
 
 .create-post-card textarea {
@@ -467,6 +467,55 @@ body.auth-page {
     margin-bottom: 8px;
 }
 
+/* Password show/hide container */
+
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.Login .password-container input,
+.Signup .password-container input {
+    width: 100%;
+    padding: 12px 65px 12px 14px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    color: #1e293b;
+    font-size: 15px;
+}
+
+.password-container input:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.password-container button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #0284c7;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.password-container button:hover {
+    color: #0369a1;
+}
+
+.password-container button:active {
+    transform: translateY(-50%);
+}
+
 .Login input[type="submit"],
 .Signup input[type="submit"] {
     width: 100%;
@@ -516,11 +565,13 @@ body.auth-page {
         gap: 12px;
         padding: 14px;
     }
+
     .nav-links {
         gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .container,
     .messages-container,
     .chat-container,
@@ -529,40 +580,13 @@ body.auth-page {
         width: 95%;
         margin: 20px auto;
     }
+
     .message-form form {
         flex-direction: column;
     }
+
     .Login,
     .Signup {
         padding: 24px 18px;
     }
-}
-
-
-.password-container {
-    position: relative;
-    width: 300px;
-}
-
-.password-container input {
-    width: 100%;
-    padding: 12px 60px 12px 10px;
-    box-sizing: border-box;
-}
-
-.password-container button {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    border: none;
-    background: transparent;
-    color: #38bdf8;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.password-container button:hover {
-    color: #0284c7;
 }
