@@ -537,3 +537,32 @@ body.auth-page {
         padding: 24px 18px;
     }
 }
+
+
+.password-container {
+    position: relative;
+    width: 300px;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 12px 60px 12px 10px;
+    box-sizing: border-box;
+}
+
+.password-container button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+    color: #38bdf8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.password-container button:hover {
+    color: #0284c7;
+}
